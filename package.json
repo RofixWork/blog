@@ -33,5 +33,9 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
+  },
+  "engines": {
+    "node":"16.6.1",
+    "npm":"7.20.3"
   }
 }
