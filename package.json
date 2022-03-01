@@ -1,0 +1,37 @@
+{
+  "name": "rofix",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "client": "npm start --prefix frontend",
+    "server": "nodemon backend/server",
+    "clientInstall": "npm install --prefix frontend",
+    "build": "npm run build --prefix frontend",
+    "heroku-build": "npm run clientInstall && npm run build",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.26.0",
+    "bcryptjs": "^2.4.3",
+    "concurrently": "^7.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "express-async-errors": "^3.1.1",
+    "express-async-handler": "^1.2.0",
+    "formidable": "^2.0.1",
+    "http-status-codes": "^2.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.2.3",
+    "uuid": "^8.3.2",
+    "validator": "^13.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
