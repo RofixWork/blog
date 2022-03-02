@@ -9,7 +9,7 @@
     "server": "nodemon backend/server",
     "clientInstall": "npm install --prefix frontend",
     "build": "npm run build --prefix frontend",
-    "heroku-postbuild": "npm run clientInstall && npm run build",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm run clientInstall && npm run build",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "keywords": [],
